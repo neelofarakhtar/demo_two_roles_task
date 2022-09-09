@@ -1,0 +1,17 @@
+<h1>Edit user</h1>
+
+<h2>Add a classroom:</h2>
+<%= form_with model: [ @user, @user.classrooms.build ] do |form| %>
+  <p>
+    <%= form.label :class_name %><br>
+    <%= form.text_field :class_name %>
+  </p>
+  <p>
+    <%= form.label :section %><br>
+    <%= form.text_area :section %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+

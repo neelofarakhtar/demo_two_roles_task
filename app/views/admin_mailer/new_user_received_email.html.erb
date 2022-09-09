@@ -1,0 +1,5 @@
+<% if @user.status == "accepted"%>
+<p><%= @user.email %> you are approved by admin</p>
+<% else %>
+<p><%= @user.email %> you are  not approved by admin</p>
+<% end%>

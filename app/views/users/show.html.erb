@@ -1,0 +1,20 @@
+<h1>Show All list</h1>
+ <tr>
+	<td><%= @user.email %></td>
+      <td><%= @user.roles.pluck(:name) %></td> 
+   </tr>
+
+<% @user.classrooms.each do |classroom| %>
+  <p>
+    <strong>Class_name:</strong>
+    <%= classroom.class_name %>
+  </p>
+
+  <p>
+    <strong>Section</strong>
+    <%= classroom.section %>
+  </p>
+
+<% end %>
+   
+   

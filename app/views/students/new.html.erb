@@ -1,0 +1,16 @@
+<h1>Add New Student</h1>
+<%= form_with url: students_create_path do |form| %>
+  <div>
+    <%= form.label :student_name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :User_id %><br>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

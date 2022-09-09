@@ -1,0 +1,19 @@
+<h1>Subjects#show</h1>
+
+<% @user.subjects.each do |subject| %>
+ <p>
+    <strong>User_id</strong>
+    <%= subject.user_id %>
+  </p>
+  <p>
+    <strong>Subject_name:</strong>
+    <%= subject.name %>
+  </p>
+
+  <p>
+    <strong>Description</strong>
+    <%= subject.description %>
+  </p>
+<% end %>
+
+<%= link_to "Back", root_path %>

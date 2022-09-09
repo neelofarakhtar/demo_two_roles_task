@@ -1,0 +1,12 @@
+<h1>Master#index</h1>
+<%= link_to "Add New Student", students_new_path %><br />
+<% if current_user.has_role? :master %>
+<% @masters.each do |master| %>
+    <tr>
+    Master id:	<td><%= master.id %></td><br />
+    User_id: 	<td><%= master.user_id %></td><br />
+    Master Name:	<td><%= master.name %></td><br />
+    <br />
+     </tr>
+  <% end %>
+<% end %>
